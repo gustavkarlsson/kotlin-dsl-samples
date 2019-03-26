@@ -1,7 +1,7 @@
 package com.meetup.kotlinffm.dsl.http
 
 data class RequestBuilder(var method: HttpMethod = HttpMethod.GET) {
-    val headers = mutableListOf<Pair<String, String>>()
+    val headers = mutableMapOf<String, String>()
     var body: String? = null
 
     fun header(name: String, value: String) {

@@ -2,7 +2,7 @@ package com.meetup.kotlinffm.dsl.http
 
 data class HttpRequest(
         val method: HttpMethod,
-        val headers: List<Pair<String, String>>,
+        val headers: Map<String, String>,
         val body: String?
 )
 
